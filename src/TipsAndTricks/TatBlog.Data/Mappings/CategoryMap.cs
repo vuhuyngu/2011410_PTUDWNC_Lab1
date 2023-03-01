@@ -13,7 +13,7 @@ public class CategoryMap : IEntityTypeConfiguration<Category>
 
         builder.HasKey(p => p.Id);
 
-        builder.Property(prop => p.Name)
+        builder.Property(p => p.Name)
             .HasMaxLength(50)
             .IsRequired();
 
@@ -25,7 +25,7 @@ public class CategoryMap : IEntityTypeConfiguration<Category>
             .IsRequired();
 
         builder.Property(p => p.ShowOnMenu)
-            .IsRequired();
+            .IsRequired()
             .HasDefaultValue(false);
     }
 }
