@@ -1,0 +1,5 @@
+C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Data\obj\Debug\net6.0\TatBlog.Data.csproj.AssemblyReference.cache
+C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Data\obj\Debug\net6.0\TatBlog.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Data\obj\Debug\net6.0\TatBlog.Data.AssemblyInfoInputs.cache
+C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Data\obj\Debug\net6.0\TatBlog.Data.AssemblyInfo.cs
+C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Data\obj\Debug\net6.0\TatBlog.Data.csproj.CoreCompileInputs.cache
