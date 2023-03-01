@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\TatBlog.Data",
+    "\\TatBlog.Services",
     "\\TatBlog.WinApp"
   ],
-  "SelectedNode": "\\TatBlog.WinApp\\Program.cs",
+  "SelectedNode": "\\TatBlog.Data\\TatBlog.Data.csproj",
   "PreviewInSolutionExplorer": false
 }
