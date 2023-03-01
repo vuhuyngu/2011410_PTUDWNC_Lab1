@@ -32,13 +32,4 @@ public class BlogDbContext : DbContext
         throw new NotImplementedException();
     }
 
-    public static implicit operator BlogDbContext(TatBlog.Services.Blogs.BlogRepository v)
-    {
-        throw new NotImplementedException();
-    }
-
-    public static implicit operator BlogDbContext(TatBlog.Services.Blogs.BlogRepository v)
-    {
-        throw new NotImplementedException();
-    }
 }
