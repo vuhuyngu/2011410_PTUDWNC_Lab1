@@ -116,5 +116,6 @@ public class DataSeeder : IDataSeeder
 
         _dbContext.AddRange(posts);
         _dbContext.SaveChanges();
+        return posts;
     }
 }
