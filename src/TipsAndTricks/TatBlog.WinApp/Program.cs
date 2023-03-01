@@ -2,7 +2,7 @@
 using TatBlog.Data.Seeders;
 using TatBlog.Services.Blogs;
 
-var context = new BlogDbContext();
+/*var context = new BlogDbContext();*/
 
 /*var seeder = new DataSeeder(context);
 
@@ -32,7 +32,7 @@ foreach (var author in authors)
     })
     .ToList();*/
 
-IBlogRepository blogRepo = new BlogRepository(context);
+/*IBlogRepository blogRepo = new BlogRepository(context);
 
 var posts = await BlogRepo.GetPopularArticlesAsync(3);
 
@@ -45,4 +45,19 @@ foreach (var post in posts)
     Console.WriteLine("Author: {0}", post.Author);
     Console.WriteLine("Category: {0}", post.Category);
     Console.WriteLine("".PadRight(80, '-'));
+}*/
+
+var context = new BlogDbContext();
+
+IBlogRepository blogRepo = new BlogRepository(context);
+
+var categories = await blogRepo.GetCategoriesAsync();
+
+Console.WriteLine("{0,-5}{1,-50}{2,10}",
+    "ID", "Name", "Count");
+
+foreach (var item in categories)
+{
+    Console.WriteLine("{ 0,-5}{ 1,-50}{ 2,10})",
+        item.Id, item.Name, item.PostCount);
 }
