@@ -85,4 +85,29 @@ public class BlogRepository : IBlogRepository
     {
         throw new NotImplementedException();
     }
+
+    public async Task<IList<CategoryItem>> GetCategoriesAsync(
+        bool showOnMenu = false,
+        CancellationToken cancellationToken = default)
+    {
+        IQueryable<Category> categories = _context.Set<Category>();
+
+        if (showOnMenu)
+        {
+            categories = categories.Where(x => x.ShowOnMenu);
+        }
+
+        return await categories
+            .OrderBy(x => x.Name)
+            .Select(x = new CategoryItem()
+            {
+                Id = x.Id,
+                Name = x.Name,
+                UrlSlug = x.UrlSlug,
+                Description = x.Description,
+                ShowOnMenu = x.ShowOnMenu,
+                PostCount = x.Posts.Count(p => p.Published)
+            })
+            .ToListAsync(cancellationToken);
+    }
 }
