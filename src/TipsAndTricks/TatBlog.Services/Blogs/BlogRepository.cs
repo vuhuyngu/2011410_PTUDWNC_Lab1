@@ -4,39 +4,74 @@ namespace TatBlog.Services.Blogs;
 
 public class BlogRepository : IBlogRepository
 {
-    public Task<Post> GetPostAsync(
+    private readonly BlogDbContext _context;
+
+    public BlogRepository(BlogRepository context)
+    {
+        _context = context;
+    }
+
+    public async Task<Post> GetPostAsync(
         int year,
         int month,
         string slug,
         CancellationToken cancellationToken = default)
     {
-        throw new NotImplementedException();
+        IQueryable<Post> postsQuery = _context.Set<Post>()
+            .Include(x => x.Category)
+            .Include(x => x.Author);
+
+        if (year > 0)
+        {
+            postsQuery = postsQuery.Where(x => x.PostedDate.Year == year);
+        }
+
+        if (month > 0)
+        {
+            postsQuery = postsQuery.Where(x => x.PostedDate.Month == month);
+        }
+
+        if (!string.IsNullOrWhiteSpace(slug))
+        {
+            postsQuery = postsQuery.Where(x => x.UrlSlug == slug);
+        }
+
+        return await postsQuery.FirstOrDefaultAsync(cancellationToken);
     }
 
-    public Task<IList<Post>> GetPopularArticlesAsync(
+    {
+        throw private new NotImplementedException();
+    }
+
+    public async Task<IList<Post>> GetPopularArticlesAsync(
         int numPosts, CancellationToken cancellationToken = default)
     {
-        throw new NotImplementedException();
+    return await _context.Set<Post>()
+    .Include(x => x.Author)
+    .Include(x => x.Category)
+    .OrderByDescending(p => p.ViewCount)
+    .Take(numPosts)
+    .ToListAsync(cancellationToken);
     }
 
-    public Task<IList<Post>> GetPopularArticlesAsync(
-        int numPosts, CancellationToken cancellationToken = default)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task<bool> IsPostSlugExistedAsync(
+    public async Task<bool> IsPostSlugExistedAsync(
         int postId,
         string slug,
         CancellationToken cancellationToken = default)
     {
-        throw new NotImplementedException();
+    return await _context.Set<Post>()
+    .AnyAsync(x => x.Id != postId && x.UrlSlug == slug,
+    cancellationToken);
     }
 
-    public Task IncreaseViewCountAsync(
+    public async Task IncreaseViewCountAsync(
         int postId,
         CancellationToken cancellationToken = default)
     {
-        throw new NotImplementedException();
+    await _context.Set<Post>()
+    .Where(x => x.Id == postId)
+    .ExecuteUpdateAsync(p =>
+    p.SetProperty(x => x.ViewCount, x => x.ViewCount + 1),
+    cancellationToken);
     }
 }
