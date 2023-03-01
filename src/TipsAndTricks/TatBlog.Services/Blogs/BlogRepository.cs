@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System;
+using Microsoft.EntityFrameworkCore;
+using TatBlog.Core.DTO;
 using TatBlog.Core.Entities;
 using TatBlog.Data.Contexts;
 
@@ -8,11 +10,9 @@ public class BlogRepository : IBlogRepository
 {
     private readonly BlogDbContext _context;
     private BlogDbContext context;
+    private object x;
 
-    public BlogRepository(BlogRepository context)
-    {
-        _context = context;
-    }
+    public BlogRepository(BlogRepository context) => _context = context;
 
     public BlogRepository(BlogDbContext context)
     {
@@ -109,5 +109,10 @@ public class BlogRepository : IBlogRepository
                 PostCount = x.Posts.Count(p => p.Published)
             })
             .ToListAsync(cancellationToken);
+    }
+
+    Task<List<CategoryItem>> IBlogRepository.GetCategoriesAsync(bool showOnMenu, CancellationToken cancellationToken)
+    {
+        throw new NotImplementedException();
     }
 }
