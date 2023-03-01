@@ -27,9 +27,6 @@ public class BlogDbContext : DbContext
             typeof(CategoryMap).Assembly);
     }
 
-    public static implicit operator BlogDbContext(TatBlog.Services.Blogs.BlogRepository v)
-    {
-        throw new NotImplementedException();
-    }
+    public static implicit operator BlogDbContext(TatBlog.Services.Blogs.BlogRepository v) => throw new NotImplementedException();
 
 }
