@@ -1,4 +1,5 @@
-﻿using TatBlog.Core.Entities;
+﻿using TatBlog.Core.DTO;
+using TatBlog.Core.Entities;
 
 namespace TatBlog.Services.Blogs;
 
