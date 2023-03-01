@@ -1,8 +1,8 @@
 ﻿using System;
 
-public class Class1
+namespace TatBlog.Core.Contracts;
+
+public interface IEntity
 {
-	public Class1()
-	{
-	}
+    int Id { get; set; }
 }
