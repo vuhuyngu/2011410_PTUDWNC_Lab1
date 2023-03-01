@@ -33,7 +33,7 @@ public class PostMap : IEntityTypeConfiguration<Post>
             .IsRequired();
 
         builder.Property(p => p.ImageUrl)
-            .HasMaxLength(1000)
+            .HasMaxLength(1000);
 
         builder.Property(p => p.ViewCount)
             .IsRequired()
