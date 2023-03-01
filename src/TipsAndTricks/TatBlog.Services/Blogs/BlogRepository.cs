@@ -1,14 +1,22 @@
-﻿using TatBlog.Core.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using TatBlog.Core.Entities;
+using TatBlog.Data.Contexts;
 
 namespace TatBlog.Services.Blogs;
 
 public class BlogRepository : IBlogRepository
 {
     private readonly BlogDbContext _context;
+    private BlogDbContext context;
 
     public BlogRepository(BlogRepository context)
     {
         _context = context;
+    }
+
+    public BlogRepository(BlogDbContext context)
+    {
+        this.context = context;
     }
 
     public async Task<Post> GetPostAsync(
@@ -39,9 +47,7 @@ public class BlogRepository : IBlogRepository
         return await postsQuery.FirstOrDefaultAsync(cancellationToken);
     }
 
-    {
-        throw private new NotImplementedException();
-    }
+    
 
     public async Task<IList<Post>> GetPopularArticlesAsync(
         int numPosts, CancellationToken cancellationToken = default)
@@ -73,5 +79,10 @@ public class BlogRepository : IBlogRepository
     .ExecuteUpdateAsync(p =>
     p.SetProperty(x => x.ViewCount, x => x.ViewCount + 1),
     cancellationToken);
+    }
+
+    public Task<IList<Post>> GetPopularArticleAsync(int numPosts, CancellationToken cancellationToken = default)
+    {
+        throw new NotImplementedException();
     }
 }
