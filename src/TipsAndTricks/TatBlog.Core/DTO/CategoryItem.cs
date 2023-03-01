@@ -11,4 +11,5 @@ public class CategoryItem
     public bool ShowOnMenu { get; set; }
 
     public int PostCount { get; set; }
+    public object Description { get; set; }
 }
