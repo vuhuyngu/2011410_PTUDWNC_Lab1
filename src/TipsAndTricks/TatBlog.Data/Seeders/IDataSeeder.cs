@@ -1,9 +1,4 @@
-﻿namespace TatBlog.Data.Seeder;
-
-public interface IDataSeeder
-{
-    void Initialize();
-}
+﻿using System;
 
 namespace TatBlog.Data.Seeders;
 
@@ -59,11 +54,13 @@ public class DataSeeder : IDataSeeder
     {
         var categories = new List<Category>()
         {
-            new() {nameof = ".NET Core", Description = ".NET Core", UrlSlug"}
-            new() {nameof = ".NET Core", Description = ".NET Core", UrlSlug"}
-            new() {nameof = ".NET Core", Description = ".NET Core", UrlSlug"}
-            new() {nameof = ".NET Core", Description = ".NET Core", UrlSlug"}
-            new() {nameof = ".NET Core", Description = ".NET Core", UrlSlug"}
+            new() {nameof = ".NET Core", Description = ".NET Core", UrlSlug="asp-dot-net-core", ShowOnMenu=true},
+            new() {nameof = ".NET Core", Description = ".NET Core", UrlSlug="architecture", ShowOnMenu=false},
+            new() {nameof = ".NET Core", Description = ".NET Core", UrlSlug="mess-info", ShowOnMenu=false},
+            new() {nameof = ".NET Core", Description = ".NET Core", UrlSlug="object-oriented-programming", ShowOnMenu=true},
+            new() {nameof = ".NET Core", Description = ".NET Core", UrlSlug="design-patterns", ShowOnMenu=true},
+           
+
         };
 
         _dbContext.AddRange(categories);
@@ -76,11 +73,11 @@ public class DataSeeder : IDataSeeder
     {
         var tags = new List<Tags>()
         {
-            new() {nameof = "Google", Description = Google application", UrlSlug"}
-            new() {nameof = "Google", Description = Google application", UrlSlug"}
-            new() {nameof = "Google", Description = Google application", UrlSlug"}
-            new() {nameof = "Google", Description = Google application", UrlSlug"}
-            new() {nameof = "Google", Description = Google application", UrlSlug"}
+            new() {nameof = "Google", Description = "Google application", UrlSlug="google-clc"},
+            new() {nameof = "Google", Description = "Google application", UrlSlug="asp-dot-net"},
+            new() {nameof = "Google", Description = "Google application", UrlSlug="razor-page"},
+            new() {nameof = "Google", Description = "Google application", UrlSlug="deep-learning"},
+            new() {nameof = "Google", Description = "Google application", UrlSlug="neural-network"}
         };
 
         _dbContext.AddRange(tags);
