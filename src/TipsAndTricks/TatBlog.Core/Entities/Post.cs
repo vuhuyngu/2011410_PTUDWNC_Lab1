@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 using TatBlog.Core.Contracts;
 
 namespace TatBlog.Core.Entities;
