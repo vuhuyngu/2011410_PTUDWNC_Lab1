@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\TatBlog.Data",
+    "\\TatBlog.Data\\Seeders",
+    "\\TatBlog.Services",
+    "\\TatBlog.WinApp"
+  ],
+  "SelectedNode": "\\TatBlog.Data\\Seeders\\IDataSeeder.cs",
+  "PreviewInSolutionExplorer": false
+}
