@@ -5,7 +5,7 @@ namespace TatBlog.Data.Seeders
     public class DataSeederBase
     {
 
-        private IList<Post> AddPosts(
+        private static IList<Post> AddPosts(
             IList<Author> authors,
             IList<Category> categories,
             IList<Tag> tags)
@@ -33,6 +33,7 @@ namespace TatBlog.Data.Seeders
 
             _dbContext.AddRange(posts);
             _dbContext.SaveChanges();
+            return posts;
         }
     }
 }
