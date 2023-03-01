@@ -1,5 +1,6 @@
 ﻿using TatBlog.Data.Contexts;
 using TatBlog.Data.Seeders;
+using TatBlog.Services.Blogs;
 
 var context = new BlogDbContext();
 
@@ -17,7 +18,7 @@ foreach (var author in authors)
         author.Id, author.FullName, author.Email, author.JoinedDate);
 }*/
 
-var posts = context.Posts
+/*var posts = context.Posts
     .Where(p => p.Published)
     .OrderBy(p => p.Title)
     .Select(p => new
@@ -29,7 +30,11 @@ var posts = context.Posts
         Author = p.Author.FullName,
         Category = p.Category.Name,
     })
-    .ToList();
+    .ToList();*/
+
+IBlogRepository blogRepo = new BlogRepository(context);
+
+var posts = await BlogRepo.GetPopularArticlesAsync(3);
 
 foreach (var post in posts)
 {
