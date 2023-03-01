@@ -13,7 +13,6 @@
   <ItemGroup>
     <Folder Include="Contexts\" />
     <Folder Include="Mappings\" />
-    <Folder Include="Seeders\" />
   </ItemGroup>
 
   <ItemGroup>
