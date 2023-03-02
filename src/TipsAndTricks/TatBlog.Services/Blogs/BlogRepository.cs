@@ -35,6 +35,8 @@ public class BlogRepository : IBlogRepository
         }
     }
 
+    // C, bài 1, câu e: Tìm 
+
     // Tìm bài viết có tên định danh "slug" và được đăng vào ngày/tháng/năm
     public async Task<Post> GetPostAsync(
         int year,
