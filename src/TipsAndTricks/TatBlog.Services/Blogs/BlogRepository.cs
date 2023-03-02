@@ -134,7 +134,7 @@ public class BlogRepository : IBlogRepository
     }
 
     // C, bài 1, câu b:
-    public async Task<IList<TagItem>> GetItemsAsync(
+    public async Task<IList<TagItem>> GetTagsAsync(
         bool showOnMenu = false,
         CancellationToken cancellationToken = default)
     {
