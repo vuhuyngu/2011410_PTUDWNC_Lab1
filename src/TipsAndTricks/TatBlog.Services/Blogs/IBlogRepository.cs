@@ -35,7 +35,7 @@ public interface IBlogRepository
         CancellationToken cancellationToken = default);
 
     // C, bài 1, câu b:
-    Task<List<TagItem>> GetItemsAsync(
+    Task<List<TagItem>> GetTagsAsync(
         bool showOnMenu = false,
         CancellationToken cancellationToken = default);
 }
