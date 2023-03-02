@@ -9,6 +9,7 @@ namespace TatBlog.Core.DTO
 
 }
 
+// C, bài 1, câu b:
 public class TagItem
 {
     public int Id { get; set; }
@@ -18,6 +19,8 @@ public class TagItem
     public string UrlSlug { get; set; }
 
     public string Description { get; set; }
+
+    public bool ShowOnMenu { get; set; }
 
     public int TagOrdinalNums { get; set; }
 
