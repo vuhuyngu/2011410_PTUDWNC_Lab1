@@ -47,7 +47,12 @@ foreach (var post in posts)
     Console.WriteLine("".PadRight(80, '-'));
 }*/
 
-var context = new BlogDbContext();
+/*foreach (var tag in tags)
+{
+    Console.WriteLine("ID")
+}*/
+
+/*var context = new BlogDbContext();*/
 
 IBlogRepository blogRepo = new BlogRepository(context);
 
