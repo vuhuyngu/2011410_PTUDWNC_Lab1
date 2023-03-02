@@ -10,6 +10,10 @@ public interface IBlogRepository
         string slug,
         CancellationToken cancellationToken = default);
 
+    // C, bài 1, câu  e: Tìm một chuyên mục category theo tên định danh "slug"
+    Task<Category> GetCategoryAsync(
+        string slug,
+        CancellationToken cancellationToken = default);
 
     // Tìm bài viết có tên định danh "slug" và được đăng vào ngày/tháng/năm
     Task<Post> GetPostAsync(
