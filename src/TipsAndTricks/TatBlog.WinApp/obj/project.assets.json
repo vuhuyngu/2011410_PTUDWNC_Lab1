@@ -226,8 +226,8 @@
     {
       "code": "NU1202",
       "level": "Error",
-      "message": "Package Microsoft.EntityFrameworkCore.SqlServer 7.0.3 is not compatible with net60 (.NETFramework,Version=v6.0). Package Microsoft.EntityFrameworkCore.SqlServer 7.0.3 supports: net6.0 (.NETCoreApp,Version=v6.0)",
-      "libraryId": "Microsoft.EntityFrameworkCore.SqlServer",
+      "message": "Package Microsoft.EntityFrameworkCore 7.0.3 is not compatible with net60 (.NETFramework,Version=v6.0). Package Microsoft.EntityFrameworkCore 7.0.3 supports: net6.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore",
       "targetGraphs": [
         ".NETFramework,Version=v6.0"
       ]
@@ -235,8 +235,8 @@
     {
       "code": "NU1202",
       "level": "Error",
-      "message": "Package Microsoft.EntityFrameworkCore 7.0.3 is not compatible with net60 (.NETFramework,Version=v6.0). Package Microsoft.EntityFrameworkCore 7.0.3 supports: net6.0 (.NETCoreApp,Version=v6.0)",
-      "libraryId": "Microsoft.EntityFrameworkCore",
+      "message": "Package Microsoft.EntityFrameworkCore.SqlServer 7.0.3 is not compatible with net60 (.NETFramework,Version=v6.0). Package Microsoft.EntityFrameworkCore.SqlServer 7.0.3 supports: net6.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore.SqlServer",
       "targetGraphs": [
         ".NETFramework,Version=v6.0"
       ]
