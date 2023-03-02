@@ -24,4 +24,6 @@ public class TagItem
 
     public int TagOrdinalNums { get; set; }
 
+    public int PostCount { get; set; }
+
 }
