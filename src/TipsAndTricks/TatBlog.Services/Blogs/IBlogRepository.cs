@@ -33,4 +33,9 @@ public interface IBlogRepository
     Task<List<CategoryItem>> GetCategoriesAsync(
         bool showOnMenu = false,
         CancellationToken cancellationToken = default);
+
+    // C, bài 1, câu b:
+    Task<List<TagItem>> GetItemsAsync(
+        bool showOnMenu = false,
+        CancellationToken cancellationToken = default);
 }
