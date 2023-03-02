@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace TatBlog.Core.DTO
+{
 
+}
 public class CategoryItem
 {
     public int Id { get; set; }
