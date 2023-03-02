@@ -5,6 +5,13 @@ namespace TatBlog.Services.Blogs;
 
 public interface IBlogRepository
 {
+    // C, bài 1, câu a: Tìm một thẻ tag theo tên định danh "slug"
+    Task<Tag> GetTagAsync(
+        string slug,
+        CancellationToken cancellationToken = default);
+
+
+    // Tìm bài viết có tên định danh "slug" và được đăng vào ngày/tháng/năm
     Task<Post> GetPostAsync(
         int year,
         int month,
