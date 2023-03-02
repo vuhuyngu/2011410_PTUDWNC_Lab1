@@ -64,17 +64,17 @@ public class BlogRepository : IBlogRepository
         return await postsQuery.FirstOrDefaultAsync(cancellationToken);
     }
 
-    
+
 
     public async Task<IList<Post>> GetPopularArticlesAsync(
         int numPosts, CancellationToken cancellationToken = default)
     {
-    return await _context.Set<Post>()
-    .Include(x => x.Author)
-    .Include(x => x.Category)
-    .OrderByDescending(p => p.ViewCount)
-    .Take(numPosts)
-    .ToListAsync(cancellationToken);
+        return await _context.Set<Post>()
+        .Include(x => x.Author)
+        .Include(x => x.Category)
+        .OrderByDescending(p => p.ViewCount)
+        .Take(numPosts)
+        .ToListAsync(cancellationToken);
     }
 
     public async Task<bool> IsPostSlugExistedAsync(
@@ -82,20 +82,20 @@ public class BlogRepository : IBlogRepository
         string slug,
         CancellationToken cancellationToken = default)
     {
-    return await _context.Set<Post>()
-    .AnyAsync(x => x.Id != postId && x.UrlSlug == slug,
-    cancellationToken);
+        return await _context.Set<Post>()
+        .AnyAsync(x => x.Id != postId && x.UrlSlug == slug,
+        cancellationToken);
     }
 
     public async Task IncreaseViewCountAsync(
         int postId,
         CancellationToken cancellationToken = default)
     {
-    await _context.Set<Post>()
-    .Where(x => x.Id == postId)
-    .ExecuteUpdateAsync(p =>
-    p.SetProperty(x => x.ViewCount, x => x.ViewCount + 1),
-    cancellationToken);
+        await _context.Set<Post>()
+        .Where(x => x.Id == postId)
+        .ExecuteUpdateAsync(p =>
+        p.SetProperty(x => x.ViewCount, x => x.ViewCount + 1),
+        cancellationToken);
     }
 
     public Task<IList<Post>> GetPopularArticleAsync(int numPosts, CancellationToken cancellationToken = default)
@@ -132,4 +132,12 @@ public class BlogRepository : IBlogRepository
     {
         throw new NotImplementedException();
     }
+
+    // C, bài 1, câu b:
+    public async Task<IList<TagItem> GetItemsAsync(
+        bool showOnMenu = false,
+        CancellationToken cancellationToken = default)
+        {
+
+        }
 }
