@@ -19,6 +19,23 @@ public class BlogRepository : IBlogRepository
         this.context = context;
     }
 
+    // C, bài 1, câu a: Tìm thẻ tag theo tên định danh slug
+    public Task<Tag> GetTagAsync(
+        string slug,
+        CancellationToken cancellationToken = default)
+    {
+        IQueryable<GetTagAsync> tagsQuery = _context.Set<tagsQuery>()
+            .Include(x => x.Category)
+            .Include(x => x.Author)
+            .Include(x => x.Post);
+
+        if (!string.IsNullOrWhiteSpace(slug))
+        {
+            tagsQuery = tagsQuery.Where(x => x.UrlSlug == slug);
+        }
+    }
+
+    // Tìm bài viết có tên định danh "slug" và được đăng vào ngày/tháng/năm
     public async Task<Post> GetPostAsync(
         int year,
         int month,
