@@ -149,7 +149,14 @@ public class BlogRepository : IBlogRepository
             .OrderBy(x => x.Id)
             .Select(x => new TagItem()
             {
-
+                Id = x.Id,
+                Name = x.Name,
+                UrlSlug = x.UrlSlug,
+                Description = x.Description,
+                ShowOnMenu = x.ShowOnMenu,
+                TagOrdinalNums = x.TagOrdinalNums,
+                PostCount = x.Posts.Count(p => p.Published)
             })
+            .ToListAsync(cancellationToken);
     }
 }
