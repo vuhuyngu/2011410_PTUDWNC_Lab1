@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj": {}
+    "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
+    "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj",
+        "projectUniqueName": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj",
         "projectName": "TatBlog.Core",
-        "projectPath": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj",
-        "packagesPath": "C:\\Users\\Maxsys\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\obj\\",
+        "projectPath": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj",
+        "packagesPath": "C:\\Users\\CICT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Maxsys\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\CICT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -25,8 +29,7 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net60": {
             "projectReferences": {}
           }
         },
@@ -37,40 +40,27 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.406\\RuntimeIdentifierGraph.json"
+        "net60": {
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj": {
+    "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj",
+        "projectUniqueName": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj",
         "projectName": "TatBlog.Data",
-        "projectPath": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj",
-        "packagesPath": "C:\\Users\\Maxsys\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Data\\obj\\",
+        "projectPath": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj",
+        "packagesPath": "C:\\Users\\CICT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Maxsys\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\CICT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -80,11 +70,10 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net60": {
             "projectReferences": {
-              "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
-                "projectPath": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj"
+              "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
+                "projectPath": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj"
               }
             }
           }
@@ -96,8 +85,7 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net60": {
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -108,38 +96,26 @@
               "version": "[7.0.3, )"
             }
           },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj": {
+    "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj",
+        "projectUniqueName": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj",
         "projectName": "TatBlog.Services",
-        "projectPath": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj",
-        "packagesPath": "C:\\Users\\Maxsys\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Services\\obj\\",
+        "projectPath": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj",
+        "packagesPath": "C:\\Users\\CICT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Services\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Maxsys\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\CICT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -149,14 +125,13 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net60": {
             "projectReferences": {
-              "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
-                "projectPath": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj"
+              "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
+                "projectPath": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj"
               },
-              "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj": {
-                "projectPath": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj"
+              "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj": {
+                "projectPath": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj"
               }
             }
           }
@@ -168,40 +143,27 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.406\\RuntimeIdentifierGraph.json"
+        "net60": {
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj": {
+    "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
+        "projectUniqueName": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
         "projectName": "TatBlog.WinApp",
-        "projectPath": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
-        "packagesPath": "C:\\Users\\Maxsys\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.WinApp\\obj\\",
+        "projectPath": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
+        "packagesPath": "C:\\Users\\CICT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.WinApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Maxsys\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\CICT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -211,17 +173,16 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net60": {
             "projectReferences": {
-              "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
-                "projectPath": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj"
+              "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
+                "projectPath": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj"
               },
-              "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj": {
-                "projectPath": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj"
+              "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj": {
+                "projectPath": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj"
               },
-              "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj": {
-                "projectPath": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj"
+              "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj": {
+                "projectPath": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj"
               }
             }
           }
@@ -233,8 +194,7 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net60": {
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -243,23 +203,12 @@
               "version": "[7.0.3, )"
             }
           },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
         }
       }
     }
