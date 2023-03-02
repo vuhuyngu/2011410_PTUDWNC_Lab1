@@ -47,12 +47,16 @@ foreach (var post in posts)
     Console.WriteLine("".PadRight(80, '-'));
 }*/
 
-/*foreach (var tag in tags)
+/* C, bài 1, câu a:
+foreach (var tag in tags)
 {
-    Console.WriteLine("ID")
+    Console.WriteLine("ID: {0}", tag.Id);
+    Console.WriteLine("Name: {0}", tag.Name);
+    Console.WriteLine("Description: {0}", tag.Description);
+    Console.WriteLine("",PadRight(80, '-'));
 }*/
 
-/*var context = new BlogDbContext();*/
+var context = new BlogDbContext();
 
 IBlogRepository blogRepo = new BlogRepository(context);
 
