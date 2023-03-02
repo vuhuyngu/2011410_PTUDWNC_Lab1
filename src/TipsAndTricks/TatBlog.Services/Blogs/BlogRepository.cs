@@ -134,10 +134,22 @@ public class BlogRepository : IBlogRepository
     }
 
     // C, bài 1, câu b:
-    public async Task<IList<TagItem> GetItemsAsync(
+    public async Task<IList<TagItem>> GetItemsAsync(
         bool showOnMenu = false,
         CancellationToken cancellationToken = default)
-        {
+    {
+        IQueryable<Tag> tags = _context.Set<tags>();
 
+        if (showOnMenu)
+        {
+            tags = tags.Where(x => x.ShowOnMenu);
         }
+
+        return await tags
+            .OrderBy(x => x.Id)
+            .Select(x => new TagItem()
+            {
+
+            })
+    }
 }
