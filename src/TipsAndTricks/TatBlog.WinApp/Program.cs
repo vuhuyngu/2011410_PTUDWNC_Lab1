@@ -70,3 +70,15 @@ foreach (var item in categories)
     Console.WriteLine("{ 0,-5}{ 1,-50}{ 2,10})",
         item.Id, item.Name, item.PostCount);
 }
+
+// C, bài 1, câu b:
+var tags = await blogRepo.GetTagsAsync();
+
+Console.WriteLine("{0,-5}{1,-50}{2,10}",
+    "ID", "Name", "Count", "TagOrdinalNums");
+
+foreach (var item1 in tags)
+{
+    Console.Writeline("{0,-5}{1,-50}{2,10}",
+        item1.Id, item1.Name, item1.TagOrdinalNums, item1.PostCount);
+}
