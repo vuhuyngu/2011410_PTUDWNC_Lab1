@@ -52,12 +52,12 @@ public class BlogRepository : IBlogRepository
     public async Task<IList<Post>> GetPopularArticlesAsync(
         int numPosts, CancellationToken cancellationToken = default)
     {
-    return await _context.Set<Post>()
-    .Include(x => x.Author)
-    .Include(x => x.Category)
-    .OrderByDescending(p => p.ViewCount)
-    .Take(numPosts)
-    .ToListAsync(cancellationToken);
+        return await _context.Set<Post>()
+             .Include(x => x.Author)
+             .Include(x => x.Category)
+             .OrderByDescending(p => p.ViewCount)
+             .Take(numPosts)
+             .ToListAsync(cancellationToken);
     }
 
     public async Task<bool> IsPostSlugExistedAsync(
