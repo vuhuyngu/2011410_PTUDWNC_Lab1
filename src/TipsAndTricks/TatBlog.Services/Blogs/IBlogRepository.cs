@@ -1,4 +1,5 @@
-﻿using TatBlog.Core.DTO;
+﻿using TatBlog.Core.Contracts;
+using TatBlog.Core.DTO;
 using TatBlog.Core.Entities;
 
 namespace TatBlog.Services.Blogs;
@@ -26,4 +27,8 @@ public interface IBlogRepository
     Task<List<CategoryItem>> GetCategoriesAsync(
         bool showOnMenu = false,
         CancellationToken cancellationToken = default);
+    Task<IPagedList<TagItem>> GetPagedTagsAsync(
+        IPagingParams pagingParams, CancellationToken cancellationToken = default);
+
+
 }
