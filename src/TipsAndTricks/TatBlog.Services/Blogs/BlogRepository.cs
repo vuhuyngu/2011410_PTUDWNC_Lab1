@@ -9,16 +9,14 @@ namespace TatBlog.Services.Blogs;
 public class BlogRepository : IBlogRepository
 {
     private readonly BlogDbContext _context;
-    private BlogDbContext context;
+    
     private object x;
-
-    public BlogRepository(BlogRepository context) => _context = context;
 
     public BlogRepository(BlogDbContext context)
     {
-        this.context = context;
+        _context = context;
     }
-
+    
     public async Task<Post> GetPostAsync(
         int year,
         int month,
