@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
+using TatBlog.Core.Contracts;
 using TatBlog.Core.DTO;
 using TatBlog.Core.Entities;
 using TatBlog.Data.Contexts;
@@ -112,5 +113,21 @@ public class BlogRepository : IBlogRepository
     Task<List<CategoryItem>> IBlogRepository.GetCategoriesAsync(bool showOnMenu, CancellationToken cancellationToken)
     {
         throw new NotImplementedException();
+    }
+
+    public async Task<IPagedList<TagItem>> GetPagedTagsAsync(IPagingParams pagingParams, CancellationToken cancellationToken = default)
+    {
+        var tagQuery = _context.Set<Tag>()
+            .Select(x => new TagItem()
+            {
+                Id = x.Id,
+                Name = x.Name,
+                UrlSlug = x.UrlSlug,
+                Description = x.Description,
+                PostCount = x.Posts.Count(p => p.Published)
+            });
+
+        return await tagQuery
+            .ToPagedListAsync(pagingParams, cancellationToken);
     }
 }
