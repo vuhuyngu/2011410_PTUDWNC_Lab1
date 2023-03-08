@@ -99,7 +99,7 @@ public class BlogRepository : IBlogRepository
 
         return await categories
             .OrderBy(x => x.Name)
-            .Select(x = new CategoryItem()
+            .Select(x => new CategoryItem()
             {
                 Id = x.Id,
                 Name = x.Name,
