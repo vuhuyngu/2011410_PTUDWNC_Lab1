@@ -84,7 +84,7 @@ namespace TatBlog.Data.Seeders
 
             return tags;
         }
-        private static IList<Post> AddPosts(
+        private IList<Post> AddPosts(
             IList<Author> authors,
             IList<Category> categories,
             IList<Tag> tags)
@@ -112,7 +112,7 @@ namespace TatBlog.Data.Seeders
 
             _dbContext.AddRange(posts);
             _dbContext.SaveChanges();
-            return posts;
+        return posts;
         }
     }
 }
