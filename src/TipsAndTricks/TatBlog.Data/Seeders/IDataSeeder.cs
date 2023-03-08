@@ -26,67 +26,7 @@ public class DataSeeder : IDataSeeder
 
     }
 
-    private IList<Author> AddAuthors() 
-    {
-        var authors = new List<Author>()
-        {
-            new()
-            {
-                FullName = "Jason Mouth",
-                UrlSlug = "jason-mouth",
-                Email = "json@gmail.com",
-                JoinedDate = new DateTime(2022, 10, 21)
-            },
-            new()
-            {
-                FullName = "Jessica Wonder",
-                UrlSlug = "jessica-wonder",
-                Email = "jessica65@motip.com",
-                JoinedDate = new DateTime(2020, 4, 19)
-            }
-        };
-
-        _dbContext.Authors.AddRange(authors);
-        _dbContext.SaveChanges();
-
-        return authors;
-    }
-
-    private IList<Category> AddCategories() 
-    {
-        var categories = new List<Category>()
-        {
-            new() {Name = ".NET Core", Description = ".NET Core", UrlSlug="asp-dot-net-core", ShowOnMenu=true},
-            new() {Name = ".NET Core", Description = ".NET Core", UrlSlug="architecture", ShowOnMenu=false},
-            new() {Name = ".NET Core", Description = ".NET Core", UrlSlug="mess-info", ShowOnMenu=false},
-            new() {Name = ".NET Core", Description = ".NET Core", UrlSlug="object-oriented-programming", ShowOnMenu=true},
-            new() {Name = ".NET Core", Description = ".NET Core", UrlSlug="design-patterns", ShowOnMenu=true},
-           
-
-        };
-
-        _dbContext.AddRange(categories);
-        _dbContext.SaveChanges();
-
-        return categories;
-    }
-
-    private IList<Tag> AddTags() 
-    {
-        var tags = new List<Tag>()
-        {
-            new() {Name = "Google", Description = "Google application", UrlSlug="google-clc"},
-            new() {Name = "Google", Description = "Google application", UrlSlug="asp-dot-net"},
-            new() {Name = "Google", Description = "Google application", UrlSlug="razor-page"},
-            new() {Name = "Google", Description = "Google application", UrlSlug="deep-learning"},
-            new() {Name = "Google", Description = "Google application", UrlSlug="neural-network"}
-        };
-
-        _dbContext.AddRange(tags);
-        _dbContext.SaveChanges();
-
-        return tags;
-    }
+    
 
     private IList<Post> AddPosts(
         IList<Author> authors,
