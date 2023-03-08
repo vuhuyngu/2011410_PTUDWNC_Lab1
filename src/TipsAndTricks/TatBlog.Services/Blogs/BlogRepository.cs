@@ -12,7 +12,7 @@ public class BlogRepository : IBlogRepository
 {
     private readonly BlogDbContext _context;
     
-    private object x;
+    /*private object x;*/
 
     public BlogRepository(BlogDbContext context)
     {
