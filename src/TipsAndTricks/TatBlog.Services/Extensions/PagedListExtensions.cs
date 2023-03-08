@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Linq;
 /*using System.Linq;
 using System.Linq.Dynamic.Core;*/
 using Microsoft.EntityFrameworkCore;
 using TatBlog.Core.Collections;
 using TatBlog.Core.Contracts;
+
 
 namespace TatBlog.Services.Extensions
 {
@@ -28,7 +30,7 @@ namespace TatBlog.Services.Extensions
         {
             var totalCount = await source.CountAsync(cancellationToken);
             var items = await source
-                .OrderBy(pagingParams.GetOrderExpression())
+                .OrderByDescending<T>(pagingParams.GetOrderExpression())
                 .Skip((pagingParams.PageNumber - 1) * pagingParams.PageSize)
                 .Take(pagingParams.PageSize)
                 .ToListAsync(cancellationToken);
