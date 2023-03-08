@@ -1,4 +1,4 @@
-﻿@model IPagedList<Post>
+﻿@*@model IPagedList<Post>
 
 @{
     var postQuery = (ViewBag.PostQuery as PostQuery) ?? new PostQuery();
@@ -69,3 +69,4 @@
         }
     </div>
 }
+*@
