@@ -12,7 +12,7 @@ public interface IBlogRepository
         string slug,
         CancellationToken cancellationToken = default);
 
-    Task<IList<Post>> GetPopularArticleAsync(
+    Task<IList<Post>> GetPopularArticlesAsync(
         int numPosts,
         CancellationToken cancellationToken = default);
 
