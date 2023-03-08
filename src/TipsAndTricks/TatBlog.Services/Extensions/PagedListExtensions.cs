@@ -1,10 +1,9 @@
-﻿using System;
-using System.Linq;
-/*using System.Linq.Dynamic.Core;*/
+﻿
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Dynamic.Core;
 using TatBlog.Core.Collections;
 using TatBlog.Core.Contracts;
-/*using System.Linq.Dynamic;*/
+
 
 
 namespace TatBlog.Services.Extensions
