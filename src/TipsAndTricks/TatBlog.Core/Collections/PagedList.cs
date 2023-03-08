@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TatBlog.Core.Contracts;
+using TatBlog.Core.Collections;
 
 namespace TatBlog.Core.Collections
 {
