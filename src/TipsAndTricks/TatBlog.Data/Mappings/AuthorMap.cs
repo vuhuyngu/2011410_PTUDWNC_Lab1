@@ -7,7 +7,6 @@ namespace TatBlog.Data.Mappings;
 
 public class AuthorMap : IEntityTypeConfiguration<Author>
 {
-
 	public void Configure(EntityTypeBuilder<Author> builder)
 	{
 		builder.ToTable("Authors");
