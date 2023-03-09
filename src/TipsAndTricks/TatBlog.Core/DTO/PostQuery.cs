@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TatBlog.Core.DTO
 {
-    internal class PostQuery
+    public class PostQuery
     {
     }
 }
