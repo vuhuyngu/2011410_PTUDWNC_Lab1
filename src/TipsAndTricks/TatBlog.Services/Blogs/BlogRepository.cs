@@ -47,8 +47,8 @@ public class BlogRepository : IBlogRepository
         return await postsQuery.FirstOrDefaultAsync(cancellationToken);
     }
 
-    
 
+    // Tìm Top N bài viết phổ được nhiều người xem nhất
     public async Task<IList<Post>> GetPopularArticlesAsync(
         int numPosts, CancellationToken cancellationToken = default)
     {
@@ -70,6 +70,7 @@ public class BlogRepository : IBlogRepository
     cancellationToken);
     }
 
+    // Tăng số lượt xem của một bài viết
     public async Task IncreaseViewCountAsync(
         int postId,
         CancellationToken cancellationToken = default)
