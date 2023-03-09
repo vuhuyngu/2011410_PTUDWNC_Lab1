@@ -23,3 +23,12 @@ C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Se
 C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\TatBlog.Services.dll
 C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\refint\TatBlog.Services.dll
 C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\TatBlog.Services.pdb
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Services\bin\Debug\net6.0\TatBlog.Services.deps.json
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Services\bin\Debug\net6.0\TatBlog.Services.dll
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Services\bin\Debug\net6.0\TatBlog.Services.pdb
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Services\bin\Debug\net6.0\TatBlog.Core.dll
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Services\bin\Debug\net6.0\TatBlog.Data.dll
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Services\bin\Debug\net6.0\TatBlog.Core.pdb
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Services\bin\Debug\net6.0\TatBlog.Data.pdb
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\TatBlog.Services.csproj.CopyComplete
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\ref\TatBlog.Services.dll
