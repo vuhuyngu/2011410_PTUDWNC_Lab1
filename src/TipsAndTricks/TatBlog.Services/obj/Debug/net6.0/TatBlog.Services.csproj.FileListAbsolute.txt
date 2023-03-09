@@ -15,3 +15,11 @@ C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.
 C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\refint\TatBlog.Services.dll
 C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\TatBlog.Services.pdb
 C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\ref\TatBlog.Services.dll
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\TatBlog.Services.csproj.AssemblyReference.cache
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\TatBlog.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\TatBlog.Services.AssemblyInfoInputs.cache
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\TatBlog.Services.AssemblyInfo.cs
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\TatBlog.Services.csproj.CoreCompileInputs.cache
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\TatBlog.Services.dll
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\refint\TatBlog.Services.dll
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.Services\obj\Debug\net6.0\TatBlog.Services.pdb
