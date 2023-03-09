@@ -131,4 +131,36 @@ public class BlogRepository : IBlogRepository
         return await tagQuery
             .ToPagedListAsync(pagingParams, cancellationToken);
     }
+
+    /*public async Task<IList<Post>> GetPostsAsync(
+        PostQuery condition,
+        int pageNumber,
+        int pageSize,
+        CancellationToken cancellationToken = default)
+    {
+        return await FilterPosts(condition)
+            .OrderByDescending(x => x.PostedDate)
+            .Skip((pageNumber - 1) * pageSize)
+            .Take(pageSize)
+            .ToListAsync(cancellationToken: cancellationToken);
+    }
+
+    public async Task<int> CountPostsAsync(
+        PostQuery condition, CancellationToken cancellationToken = default)
+    {
+        return await FilterPosts(condition).CountAsync(cancellationToken: cancellationToken);
+    }
+
+    public async Task<Post> GetPostAsync(
+        string slug,
+        CancellationToken cancellationToken = default)
+    {
+        var postQuery = new PostQuery()
+        {
+            PublishedOnly = false,
+            TltleSlug = slug,
+        };
+
+        return await FilterPosts(postQuery).FirstOrDefaultAsync(cancellationToken);
+    }*/
 }
