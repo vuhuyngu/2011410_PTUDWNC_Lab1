@@ -82,6 +82,40 @@ public class BlogRepository : IBlogRepository
     cancellationToken);
     }
 
+    public async Task<Author> GetAuthorAsync(string slug, CancellationToken cancellationToken = default)
+    {
+        return await _context.Set<Author>()
+            .FirstOrDefaultAsync(a => a.UrlSlug == slug, cancellationToken);
+    }
+
+    public async Task<Author> GetAuthorByIdAsync(int authorId)
+    {
+        return await _context.Set<Author>().FindAsync(authorId);
+    }
+
+    public async Task<IList<AuthorItem>> GetAuthorsAsync(CancellationToken cancellationToken = default)
+    {
+        return await _context.Set<Author>()
+            .OrderBy(a => a.FullName)
+            .Select(a => new AuthorItem()
+            {
+                Id = a.Id,
+                FullName = a.FullName,
+                Email = a.ToString(),
+                JoinedDate = a.JoinedDate,
+                ImageUrl = a.ImageUrl,
+                UrlSlug = a.UrlSlug,
+                Notes = a.Notes,
+                PostCount = a.Posts.Count(p => p.Published)
+            })
+            .ToListAsync(cancellationToken);
+    }
+
+
+
+
+
+
     public Task<IList<Post>> GetPopularArticleAsync(int numPosts, CancellationToken cancellationToken = default)
     {
         throw new NotImplementedException();
@@ -133,7 +167,7 @@ public class BlogRepository : IBlogRepository
             .ToPagedListAsync(pagingParams, cancellationToken);
     }
 
-    /*public async Task<IList<Post>> GetPostsAsync(
+    public async Task<IList<Post>> GetPostsAsync(
         PostQuery condition,
         int pageNumber,
         int pageSize,
@@ -152,6 +186,23 @@ public class BlogRepository : IBlogRepository
         return await FilterPosts(condition).CountAsync(cancellationToken: cancellationToken);
     }
 
+    public async Task<IList<MonthlyPostCountItem>> CountMonthlyPostsAsync(
+        int numMonths, CancellationToken cancellationToken = default)
+    {
+        return await _context.Set<Post>()
+            .GroupBy(x => new { x.PostedDate.Year, x.PostedDate.Month })
+            .Select(g => new MonthlyPostCountItem()
+            {
+                Year = g.Key.Year,
+                Month = g.Key.Month,
+                PostCount = g.Count(x => x.Published)
+            })
+            .OrderByDescending(x => x.Year)
+            .ThenByDescending(x => x.Month)
+            .ToListAsync(cancellationToken);
+    }
+
+    /*
     public async Task<Post> GetPostAsync(
         string slug,
         CancellationToken cancellationToken = default)
