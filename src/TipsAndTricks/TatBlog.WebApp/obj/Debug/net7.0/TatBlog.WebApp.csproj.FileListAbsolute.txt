@@ -79,3 +79,14 @@ C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.
 C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\obj\Debug\net7.0\TatBlog.WebApp.pdb
 C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\obj\Debug\net7.0\TatBlog.WebApp.genruntimeconfig.cache
 C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\obj\Debug\net7.0\ref\TatBlog.WebApp.dll
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\obj\Debug\net7.0\TatBlog.WebApp.csproj.AssemblyReference.cache
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\obj\Debug\net7.0\TatBlog.WebApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\obj\Debug\net7.0\TatBlog.WebApp.AssemblyInfoInputs.cache
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\obj\Debug\net7.0\TatBlog.WebApp.AssemblyInfo.cs
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\obj\Debug\net7.0\TatBlog.WebApp.csproj.CoreCompileInputs.cache
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\obj\Debug\net7.0\TatBlog.WebApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\obj\Debug\net7.0\TatBlog.WebApp.RazorAssemblyInfo.cache
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\obj\Debug\net7.0\TatBlog.WebApp.RazorAssemblyInfo.cs
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\obj\Debug\net7.0\TatBlog.WebApp.dll
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\obj\Debug\net7.0\refint\TatBlog.WebApp.dll
+C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\obj\Debug\net7.0\TatBlog.WebApp.pdb
