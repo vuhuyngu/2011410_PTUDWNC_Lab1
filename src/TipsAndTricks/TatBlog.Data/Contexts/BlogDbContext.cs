@@ -14,7 +14,7 @@ public class BlogDbContext : DbContext
 
     public DbSet<Tag> Tags { get; set; }
 
-    protected override void OnConfiguring(
+    /*protected override void OnConfiguring(
         DbContextOptionsBuilder optionsBuilder)
     {
 <<<<<<< Updated upstream
@@ -26,7 +26,7 @@ public class BlogDbContext : DbContext
 
         public DbSet<Post> Posts { get; set; }
 
-        public DbSet<Tag> Tags { get; set; }
+        public DbSet<Tag> Tags { get; set; }*/
 
         public BlogDbContext(DbContextOptions<BlogDbContext> options)
             : base(options)
@@ -40,11 +40,12 @@ public class BlogDbContext : DbContext
 
         protected override void OnConfiguring(
             DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(@"DESKTOP-GJ77F65;Database=TatBlog;
->>>>>>> Stashed changes
-            Trusted_Connection=True;MultipleActiveResultSets=true");
+    {
+        optionsBuilder.UseSqlServer(@"Server=DESKTOP-GJ77F65;Database=TatBlog;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True;");
     }
+    /*>>>>>>> Stashed changes
+                Trusted_Connection=True;MultipleActiveResultSets=true");
+        }*/
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -52,6 +53,6 @@ public class BlogDbContext : DbContext
             typeof(CategoryMap).Assembly);
     }
 
-    public static implicit operator BlogDbContext(TatBlog.Services.Blogs.BlogRepository v) => throw new NotImplementedException();
+    /*public static implicit operator BlogDbContext(TatBlog.Services.Blogs.BlogRepository v) => throw new NotImplementedException();*/
 
 }
