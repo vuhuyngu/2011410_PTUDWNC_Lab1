@@ -1,4 +1,5 @@
-﻿namespace TatBlog.Core.DTO;
+﻿using System;
+namespace TatBlog.Core.DTO;
 
 public class CategoryItem
 {
