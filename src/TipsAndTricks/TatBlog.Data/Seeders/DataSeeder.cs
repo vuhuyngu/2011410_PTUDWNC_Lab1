@@ -59,16 +59,10 @@ namespace TatBlog.Data.Seeders
         {
             var categories = new List<Category>()
         {
-            new() {Name = ".NET Core", Description = ".NET Core", UrlSlug="asp-dot-net-core", ShowOnMenu=true},
-            new() {Name = ".NET Core", Description = ".NET Core", UrlSlug="architecture", ShowOnMenu=false},
-            new() {Name = ".NET Core", Description = ".NET Core", UrlSlug="mess-info", ShowOnMenu=false},
-            new() {Name = ".NET Core", Description = ".NET Core", UrlSlug="object-oriented-programming", ShowOnMenu=true},
-            new() {Name = ".NET Core", Description = ".NET Core", UrlSlug="design-patterns", ShowOnMenu=true},
-            new() {Name = ".NET Core", Description = ".NET Core", UrlSlug="asp-dot-net-core", ShowOnMenu=true},
-            new() {Name = ".NET Core", Description = ".NET Core", UrlSlug="architecture", ShowOnMenu=false},
-            new() {Name = ".NET Core", Description = ".NET Core", UrlSlug="mess-info", ShowOnMenu=false},
-            new() {Name = ".NET Core", Description = ".NET Core", UrlSlug="object-oriented-programming", ShowOnMenu=true},
-            new() {Name = ".NET Core", Description = ".NET Core", UrlSlug="design-patterns", ShowOnMenu=true}
+            new() {Name = ".NET Core 5.0", Description = ".NET Core 5.0", UrlSlug="asp-dot-net-core", ShowOnMenu=true},
+            new() {Name = ".NET Core 6.0", Description = ".NET Core 6.0", UrlSlug="architecture", ShowOnMenu=false},
+            new() {Name = ".NET Core 7.0", Description = ".NET Core 7.0", UrlSlug="mess-info", ShowOnMenu=false},
+            
 
         };
 
@@ -83,12 +77,10 @@ namespace TatBlog.Data.Seeders
             var tags = new List<Tag>()
         {
             new() {Name = "Google", Description = "Google application", UrlSlug="google-clc"},
-            new() {Name = "Google", Description = "Google application", UrlSlug="asp-dot-net"},
-            new() {Name = "Google", Description = "Google application", UrlSlug="razor-page"},
-            new() {Name = "Google", Description = "Google application", UrlSlug="deep-learning"},
-            new() {Name = "Google", Description = "Google application", UrlSlug="neural-network"},
-            new() {Name = "Google", Description = "Google application", UrlSlug="deep-learning"},
-            new() {Name = "Google", Description = "Google application", UrlSlug="neural-network"}
+            new() {Name = "Mozilla", Description = "Mozilla application", UrlSlug="asp-dot-net"},
+            new() {Name = "Microsoft Edge", Description = "Microsoft Edge application", UrlSlug="razor-page"},
+            new() {Name = "Bing", Description = "Bing application", UrlSlug="deep-learning"},
+            new() {Name = "CocCoc", Description = "CocCoc application", UrlSlug="neural-network"},
         };
 
             _dbContext.AddRange(tags);
@@ -98,10 +90,7 @@ namespace TatBlog.Data.Seeders
         }
 
 
-
-
-
-        private static IList<Post> AddPosts(
+        private IList<Post> AddPosts(
             IList<Author> authors,
             IList<Category> categories,
             IList<Tag> tags)
@@ -124,6 +113,54 @@ namespace TatBlog.Data.Seeders
                 {
                     tags[0]
                 }
+            },
+            new()
+            {
+                Title = "Azure Virtual Machines vs Aoo Services",
+                ShortDescription = "David and friends has a great repos " ,
+                Description = "Here's a few great DON'T and DO examples ",
+                Meta = "David and friends has a great repository filled ",
+                UrlSlug ="aspnet-core-diagnostic-scenarios",
+                Published = true,
+                PostedDate = new DateTime (2022, 7, 9, 10, 20, 0),
+                ModifiedDate = null,
+                Author= authors[1],
+                ViewCount = 6,
+                Category = categories[6],
+                Tags = new List<Tag>()
+                { tags[3] }
+            },
+            new()
+            {
+                Title = "HTML, CSS",
+                ShortDescription = "David and friends has a great repos " ,
+                Description = "Here's a few great DON'T and DO examples ",
+                Meta = "David and friends has a great repository filled ",
+                UrlSlug ="aspnet-core-diagnostic-scenarios",
+                Published = true,
+                PostedDate = new DateTime (2022, 7, 9, 10, 20, 0),
+                ModifiedDate = null,
+                Author= authors[0],
+                ViewCount = 19,
+                Category = categories[6],
+                Tags = new List<Tag>()
+                { tags[2] }
+            },
+            new()
+            {
+                Title = "Javascript",
+                ShortDescription = "David and friends has a great repos " ,
+                Description = "Here's a few great DON'T and DO examples ",
+                Meta = "David and friends has a great repository filled ",
+                UrlSlug ="aspnet-core-diagnostic-scenarios",
+                Published = true,
+                PostedDate = new DateTime (2022, 7, 9, 10, 20, 0),
+                ModifiedDate = null,
+                Author= authors[1],
+                ViewCount = 19,
+                Category = categories[6],
+                Tags = new List<Tag>()
+                { tags[2] }
             }
         };
 
