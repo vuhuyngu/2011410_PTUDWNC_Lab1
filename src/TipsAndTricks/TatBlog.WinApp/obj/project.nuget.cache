@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "x1KoTMVkDjQ35wOYvnfQw4xHWX5OF7lEiTQ3sYDMT/0zgI1vm8l1KIw0/RUhnPUzUORUlXk+zdJuoavxQXn0EQ==",
+  "dgSpecHash": "rl1aAQVJOVot04vUdbaEl5uTLbUX+rGyNADCLGfKZYvuZwf+7uxcev/hJPWaSJVzUVgziaCKoVNafUT9ffbbrQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
   "expectedPackageFiles": [
@@ -51,6 +51,7 @@
     "C:\\Users\\Maxsys\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",
     "C:\\Users\\Maxsys\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.21.0\\system.identitymodel.tokens.jwt.6.21.0.nupkg.sha512",
     "C:\\Users\\Maxsys\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\Maxsys\\.nuget\\packages\\system.linq.dynamic.core\\1.3.1\\system.linq.dynamic.core.1.3.1.nupkg.sha512",
     "C:\\Users\\Maxsys\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\Maxsys\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
     "C:\\Users\\Maxsys\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
@@ -73,12 +74,5 @@
     "C:\\Users\\Maxsys\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Maxsys\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.WinApp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
