@@ -17,7 +17,32 @@ public class BlogDbContext : DbContext
     protected override void OnConfiguring(
         DbContextOptionsBuilder optionsBuilder)
     {
+<<<<<<< Updated upstream
         optionsBuilder.UseSqlServer(@"Server=PHUCNV;Database=TatBlog;
+=======
+        public DbSet<Author> Authors { get; set; }
+
+        public DbSet<Category> Categories { get; set; }
+
+        public DbSet<Post> Posts { get; set; }
+
+        public DbSet<Tag> Tags { get; set; }
+
+        public BlogDbContext(DbContextOptions<BlogDbContext> options)
+            : base(options)
+        {
+
+        }
+
+        public BlogDbContext()
+        {
+        }
+
+        protected override void OnConfiguring(
+            DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(@"DESKTOP-GJ77F65;Database=TatBlog;
+>>>>>>> Stashed changes
             Trusted_Connection=True;MultipleActiveResultSets=true");
     }
 
