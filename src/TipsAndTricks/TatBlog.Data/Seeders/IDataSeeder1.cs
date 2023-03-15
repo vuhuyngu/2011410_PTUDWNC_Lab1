@@ -1,7 +1,7 @@
-﻿namespace TatBlog.Data.Seeders
+﻿/*namespace TatBlog.Data.Seeders
 {
     public interface IDataSeeder
     {
 
     }
-}
+}*/
