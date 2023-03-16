@@ -16,3 +16,12 @@ app.UseRequestPipeLine();
 app.UseBlogRoutes();
 app.UseDataSeeder();
 app.Run();
+
+
+var builder = WebApplication.CreateBuilder(args);
+{
+    builder
+        .ConfigureMvc()
+        .ConfigureServices()
+        .ConfigureMapster();
+}
