@@ -18,6 +18,12 @@ public class PostsController : Controller
         _blogRepository = blogRepository;
     }
 
+    public string Keyword { get; private set; }
+    public int? CategoryId { get; private set; }
+    public int? AuthorId { get; private set; }
+    public int? Year { get; private set; }
+    public int? Month { get; private set; }
+
     public async Task<IActionResult> Index(PostFilterModel model)
     {
         var postQuery = new PostQuery();
