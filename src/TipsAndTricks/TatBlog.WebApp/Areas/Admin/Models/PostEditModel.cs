@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel;
-using Microsoft.Build.Framework;
 using System.ComponentModel.DataAnnotations;
 
 namespace TatBlog.WebApp.Areas.Admin.Models;
@@ -13,29 +12,29 @@ public class PostEditModel
     [DisplayName("Tiêu đề")]
     [Required(ErrorMessage = "Tiêu đề không được để trống")]
     [MaxLength(500, ErrorMessage = "Tiêu đề tối đa 500 kí tự")]
-    public string Title { get; set; }
+    public string? Title { get; set; }
 
     [DisplayName("Giới thiệu")]
     [Required(ErrorMessage = "Giới thiệu không được để trống")]
     [MaxLength(2000, ErrorMessage = "Tiêu đề tối đa 2000 kí tự")]
-    public string ShortDescription { get; set; }
+    public string? ShortDescription { get; set; }
 
     [DisplayName("Nội dung")]
     [Required(ErrorMessage = "Nội dung không được để trống")]
     [MaxLength(5000, ErrorMessage = "Tiêu đề tối đa 5000 kí tự")]
-    public string Description { get; set; }
+    public string? Description { get; set; }
 
     [DisplayName("Metadata")]
     [Required(ErrorMessage = "Metadata không được để trống")]
     [MaxLength(1000, ErrorMessage = "Tiêu đề tối đa 1000 kí tự")]
-    public string Meta { get; set; }
+    public string? Meta { get; set; }
 
     [DisplayName("Slug")]
     [Remote("VerifyPostSlug", "Posts", "Admin",
         HttpMethod = "POST", AdditionalFields = "Id")]
     [Required(ErrorMessage = "URL slug không được để trống")]
     [MaxLength(200, ErrorMessage = "Tiêu đề tối đa 200 kí tự")]
-    public string UrlSlug { get; set; }
+    public string? UrlSlug { get; set; }
 
     [DisplayName("Chọn hình ảnh")]
     public IFormFile? ImageFile { get; set; }
@@ -56,7 +55,7 @@ public class PostEditModel
 
     [DisplayName("Từ khóa(mỗi từ 1 dòng)")]
     [Required(ErrorMessage = "Bạn chưa nhập tên thẻ")]
-    public string SelectedTags { get; set; }
+    public string? SelectedTags { get; set; }
 
     public IEnumerable<SelectListItem>? AuthorList { get; set; }
 
