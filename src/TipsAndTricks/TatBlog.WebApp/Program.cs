@@ -3,12 +3,14 @@ using TatBlog.Data.Contexts;
 using TatBlog.Data.Seeders;
 using TatBlog.Services.Blogs;
 using TatBlog.WebApp.Extensions;
+using TatBlog.WebApp.Mapsters;
 
 var builder = WebApplication.CreateBuilder(args);
 {
     builder
         .ConfigureMvc()
-        .ConfigureServices();
+        .ConfigureServices()
+        .ConfigureMapster();
 }
 
 var app = builder.Build();
@@ -18,10 +20,3 @@ app.UseDataSeeder();
 app.Run();
 
 
-var builder = WebApplication.CreateBuilder(args);
-{
-    builder
-        .ConfigureMvc()
-        .ConfigureServices()
-        .ConfigureMapster();
-}
