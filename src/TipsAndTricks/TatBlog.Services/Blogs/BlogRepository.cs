@@ -702,11 +702,9 @@ namespace TatBlog.Services.Blogs
 
         }
 
-        
-
-        
-
-        
-        
+        public Task CreateOrUpdatePostAsync(object post, List<string> list)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
