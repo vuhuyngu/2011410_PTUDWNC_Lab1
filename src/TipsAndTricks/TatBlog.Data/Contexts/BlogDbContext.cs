@@ -41,7 +41,7 @@ public class BlogDbContext : DbContext
         protected override void OnConfiguring(
             DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer(@"Server=DESKTOP-GJ77F65;Database=TatBlog;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True;");
+        optionsBuilder.UseSqlServer(@"Server=PC336;Database=TatBlog;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True;");
     }
     /*>>>>>>> Stashed changes
                 Trusted_Connection=True;MultipleActiveResultSets=true");
