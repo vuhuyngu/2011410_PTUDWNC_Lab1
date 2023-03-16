@@ -24,7 +24,7 @@ public class PostsController : Controller
     }
 
 
-    public string Keyword { get; private set; }
+    public string? Keyword { get; private set; }
     public int? CategoryId { get; private set; }
     public int? AuthorId { get; private set; }
     public int? Year { get; private set; }
