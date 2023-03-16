@@ -79,6 +79,11 @@ public class PostsController : Controller
         return View(model);
     }
 
+    private Task PopulatePostEditModelAsync(PostEditModel model)
+    {
+        throw new NotImplementedException();
+    }
+
     public async Task<IActionResult> Edit(PostEditModel model)
     {
 
@@ -89,7 +94,7 @@ public class PostsController : Controller
         }
 
         var post = model.Id > 0
-            ? await _blogRepository.GetPostByIdAsync(model.Id)
+            ? await _blogRepository.GetPostByIdAsync(model.Id, true)
             : null;
 
         if (post == null)
