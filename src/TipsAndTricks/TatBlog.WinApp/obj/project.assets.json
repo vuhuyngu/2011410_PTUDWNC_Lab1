@@ -3634,25 +3634,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\CICT\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Maxsys\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
+      "projectUniqueName": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
       "projectName": "TatBlog.WinApp",
-      "projectPath": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
-      "packagesPath": "C:\\Users\\CICT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.WinApp\\obj\\",
+      "projectPath": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
+      "packagesPath": "C:\\Users\\Maxsys\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.WinApp\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\CICT\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Maxsys\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -3665,14 +3660,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
-              "projectPath": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj"
+            "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
+              "projectPath": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj"
             },
-            "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj": {
-              "projectPath": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj"
+            "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj": {
+              "projectPath": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj"
             },
-            "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj": {
-              "projectPath": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj"
+            "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj": {
+              "projectPath": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj"
             }
           }
         }
