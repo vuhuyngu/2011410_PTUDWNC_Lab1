@@ -102,33 +102,18 @@ namespace TatBlog.Data.Seeders
                 Title = "ASP.NET Core Diagnostic Scenarios",
                 ShortDescription = "David and friends has a great repos",
                 Description = "Here is a few great DON'T and DO examples",
-                UrlSlug = "aspnet-core-...",
+                Meta = "Abc def",
+                UrlSlug = "aspnet-core-diagnostic-scenarios",
                 Published = true,
                 PostedDate = new DateTime(2021, 9, 30, 10, 20, 0),
                 ModifiedDate = null,
                 ViewCount = 10,
                 Author = authors[0],
-                Category = categories[0],
+                Category = categories[1],
                 Tags = new List<Tag>()
                 {
                     tags[0]
                 }
-            },
-            new()
-            {
-                Title = "Azure Virtual Machines vs Aoo Services",
-                ShortDescription = "David and friends has a great repos " ,
-                Description = "Here's a few great DON'T and DO examples ",
-                Meta = "David and friends has a great repository filled ",
-                UrlSlug ="aspnet-core-diagnostic-scenarios",
-                Published = true,
-                PostedDate = new DateTime (2022, 7, 9, 10, 20, 0),
-                ModifiedDate = null,
-                Author= authors[1],
-                ViewCount = 6,
-                Category = categories[6],
-                Tags = new List<Tag>()
-                { tags[3] }
             },
             new()
             {
@@ -142,7 +127,7 @@ namespace TatBlog.Data.Seeders
                 ModifiedDate = null,
                 Author= authors[0],
                 ViewCount = 19,
-                Category = categories[6],
+                Category = categories[2],
                 Tags = new List<Tag>()
                 { tags[2] }
             },
@@ -158,7 +143,7 @@ namespace TatBlog.Data.Seeders
                 ModifiedDate = null,
                 Author= authors[1],
                 ViewCount = 19,
-                Category = categories[6],
+                Category = categories[2],
                 Tags = new List<Tag>()
                 { tags[2] }
             }
