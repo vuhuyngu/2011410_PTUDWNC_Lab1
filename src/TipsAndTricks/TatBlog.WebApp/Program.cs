@@ -10,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 {
     builder
         .ConfigureMvc()
+        .ConfigureNLog()
         .ConfigureServices()
         .ConfigureMapster()
         .ConfigureFluentValidation();
