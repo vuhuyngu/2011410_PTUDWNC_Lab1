@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TtYhXRcFDpFOZh4N1WcMoE2fbK+JTnd+PXBuGAEaZ1uD9NmIPd32iOxBO/5fypLzm5P39gSSD4O7+kCiiMwVkQ==",
+  "dgSpecHash": "aAX6SQ4hAQ/zVkb7knxicRkQgplfqRk0ylXrC/7xxI0qVIR8YtPolSAMDN2CpuuXdECPVTnsg2zDxe6ietp0bw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.WebApp\\TatBlog.WebApp.csproj",
   "expectedPackageFiles": [
@@ -75,6 +75,9 @@
     "C:\\Users\\Maxsys\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Maxsys\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\Maxsys\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Maxsys\\.nuget\\packages\\nlog\\5.1.2\\nlog.5.1.2.nupkg.sha512",
+    "C:\\Users\\Maxsys\\.nuget\\packages\\nlog.extensions.logging\\5.2.2\\nlog.extensions.logging.5.2.2.nupkg.sha512",
+    "C:\\Users\\Maxsys\\.nuget\\packages\\nlog.web.aspnetcore\\5.2.2\\nlog.web.aspnetcore.5.2.2.nupkg.sha512",
     "C:\\Users\\Maxsys\\.nuget\\packages\\nuget.common\\6.3.1\\nuget.common.6.3.1.nupkg.sha512",
     "C:\\Users\\Maxsys\\.nuget\\packages\\nuget.configuration\\6.3.1\\nuget.configuration.6.3.1.nupkg.sha512",
     "C:\\Users\\Maxsys\\.nuget\\packages\\nuget.dependencyresolver.core\\6.3.1\\nuget.dependencyresolver.core.6.3.1.nupkg.sha512",
