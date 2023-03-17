@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {}
+    "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
+    "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj",
         "projectName": "TatBlog.Core",
-        "projectPath": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj",
-        "packagesPath": "C:\\Users\\CICT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CICT\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\obj\\",
+        "projectPath": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj",
+        "packagesPath": "C:\\Users\\Maxsys\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\CICT\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Maxsys\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
