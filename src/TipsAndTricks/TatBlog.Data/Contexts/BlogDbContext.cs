@@ -38,11 +38,11 @@ public class BlogDbContext : DbContext
         {
         }
 
-        protected override void OnConfiguring(
+        /*protected override void OnConfiguring(
             DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer(@"Server=PC336;Database=TatBlog;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True;");
-    }
+    }*/
     /*>>>>>>> Stashed changes
                 Trusted_Connection=True;MultipleActiveResultSets=true");
         }*/
