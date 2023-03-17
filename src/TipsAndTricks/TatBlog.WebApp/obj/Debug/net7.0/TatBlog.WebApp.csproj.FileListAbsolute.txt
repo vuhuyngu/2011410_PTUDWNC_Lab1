@@ -556,3 +556,11 @@ C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.We
 C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\obj\Debug\net7.0\ref\TatBlog.WebApp.dll
 C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\bin\Debug\net7.0\Mapster.dll
 C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\bin\Debug\net7.0\Mapster.DependencyInjection.dll
+C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\bin\Debug\net7.0\nlog.config
+C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\bin\Debug\net7.0\NLog.dll
+C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\bin\Debug\net7.0\NLog.Extensions.Logging.dll
+C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\bin\Debug\net7.0\NLog.Web.AspNetCore.dll
+C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\obj\Debug\net7.0\TatBlog.WebApp.MvcApplicationPartsAssemblyInfo.cs
