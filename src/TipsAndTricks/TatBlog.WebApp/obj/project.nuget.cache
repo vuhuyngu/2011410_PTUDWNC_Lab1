@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "7yiaIgcUXBKR2Q4kbnJ1lhWnq6WZvqo8Lvfre/phMQsX1h7Tv6AvdvGt1KdImJfFpv8oqW/Yan46UY86+7IBkg==",
+  "dgSpecHash": "TtYhXRcFDpFOZh4N1WcMoE2fbK+JTnd+PXBuGAEaZ1uD9NmIPd32iOxBO/5fypLzm5P39gSSD4O7+kCiiMwVkQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Maxsys\\Documents\\GitHub\\2011410_PTUDWNC_Lab1\\src\\TipsAndTricks\\TatBlog.WebApp\\TatBlog.WebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Maxsys\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Maxsys\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\Maxsys\\.nuget\\packages\\fluentvalidation\\11.2.1\\fluentvalidation.11.2.1.nupkg.sha512",
+    "C:\\Users\\Maxsys\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\Maxsys\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "C:\\Users\\Maxsys\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Maxsys\\.nuget\\packages\\mapster\\5.0.0\\mapster.5.0.0.nupkg.sha512",
     "C:\\Users\\Maxsys\\.nuget\\packages\\mapster.dependencyinjection\\1.0.0\\mapster.dependencyinjection.1.0.0.nupkg.sha512",
