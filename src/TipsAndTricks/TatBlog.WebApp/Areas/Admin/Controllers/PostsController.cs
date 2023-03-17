@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using MapsterMapper;
 using TatBlog.Services.Media;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 
 namespace TatBlog.WebApp.Areas.Admin.Controllers;
 
@@ -88,8 +90,16 @@ public class PostsController : Controller
         throw new NotImplementedException();
     }
 
-    public async Task<IActionResult> Edit(PostEditModel model)
+    public async Task<IActionResult> Edit(
+        IValidator<PostEditModel> postValidator,
+        PostEditModel model)
     {
+        var validationResult = await postValidator.ValidateAsync(model);
+
+        if (!validationResult.IsValid)
+        {
+            validationResult.AddToModelState(ModelState);
+        }
 
         if (!ModelState.IsValid)
         {
