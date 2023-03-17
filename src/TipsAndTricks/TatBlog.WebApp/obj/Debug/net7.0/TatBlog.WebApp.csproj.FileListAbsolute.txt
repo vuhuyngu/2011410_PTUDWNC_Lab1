@@ -554,3 +554,5 @@ C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.We
 C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\obj\Debug\net7.0\TatBlog.WebApp.csproj.CopyComplete
 C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\obj\Debug\net7.0\TatBlog.WebApp.genruntimeconfig.cache
 C:\Users\CICT\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\obj\Debug\net7.0\ref\TatBlog.WebApp.dll
+C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\bin\Debug\net7.0\Mapster.dll
+C:\Users\Maxsys\Documents\GitHub\2011410_PTUDWNC_Lab1\src\TipsAndTricks\TatBlog.WebApp\bin\Debug\net7.0\Mapster.DependencyInjection.dll
