@@ -115,4 +115,5 @@ public interface IBlogRepository
         int id, 
         CancellationToken cancellationToken = default);
     Task CreateOrUpdatePostAsync(object post, List<string> list);
+    Task GetPostAsync(PostQuery postQuery);
 }
