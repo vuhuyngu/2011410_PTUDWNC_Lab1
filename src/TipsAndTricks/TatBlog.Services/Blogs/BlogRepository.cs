@@ -434,6 +434,7 @@ namespace TatBlog.Services.Blogs
             return post.Published;
         }*/
 
+        // Hiển thị TOP 5 bài viết ngẫu nhiên
         /*public async Task<IList<Post>> GetRandomArticlesAsync(
             int numPosts, CancellationToken cancellationToken = default)
         {
@@ -441,7 +442,16 @@ namespace TatBlog.Services.Blogs
                 .OrderBy(x => Guid.NewGuid())
                 .Take(numPosts)
                 .ToListAsync(cancellationToken);
-        }*/
+        }
+        // Hiển thị TOP 4 tác giả có nhiều bài viết nhất.
+        public async Task<IList<Author>> GetPopularAuthorsAsync(int numAuthor, CancellationToken cancellationToken = default)
+        {
+            return await _context.Set<Author>()
+                .OrderByDescending(p => p.Posts)
+                .Take(numAuthor)
+                .ToListAsync(cancellationToken);
+        }
+        */
 
         /*Task<List<CategoryItem>> IBlogRepository.GetCategoriesAsync(bool showOnMenu, CancellationToken cancellationToken)
         {
@@ -715,6 +725,11 @@ namespace TatBlog.Services.Blogs
         }
 
         public Task CreateOrUpdatePostAsync(object post, List<string> list)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task GetPostAsync(PostQuery postQuery)
         {
             throw new NotImplementedException();
         }
