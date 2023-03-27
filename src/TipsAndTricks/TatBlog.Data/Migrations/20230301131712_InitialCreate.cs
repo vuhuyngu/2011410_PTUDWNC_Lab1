@@ -11,7 +11,7 @@ namespace TatBlog.Data.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(
+            /*migrationBuilder.CreateTable(
                 name: "Authors",
                 columns: table => new
                 {
@@ -133,13 +133,13 @@ namespace TatBlog.Data.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_PostTags_TagsId",
                 table: "PostTags",
-                column: "TagsId");
+                column: "TagsId");*/
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
+            /*migrationBuilder.DropTable(
                 name: "PostTags");
 
             migrationBuilder.DropTable(
@@ -152,7 +152,7 @@ namespace TatBlog.Data.Migrations
                 name: "Authors");
 
             migrationBuilder.DropTable(
-                name: "Categories");
+                name: "Categories");*/
         }
     }
 }

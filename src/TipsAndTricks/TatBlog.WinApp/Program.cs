@@ -1,8 +1,8 @@
 ﻿using TatBlog.Data.Contexts;
 using TatBlog.Data.Seeders;
 using TatBlog.Services.Blogs;
+using TatBlog.WinApp;
 
-/*var context = new BlogDbContext();*/
 
 /*var seeder = new DataSeeder(context);
 
@@ -31,10 +31,19 @@ foreach (var author in authors)
         Category = p.Category.Name,
     })
     .ToList();*/
+var context = new BlogDbContext();
 
-/*IBlogRepository blogRepo = new BlogRepository(context);
+IBlogRepository blogRepo = new BlogRepository(context);
 
-var posts = await BlogRepo.GetPopularArticlesAsync(3);
+var pagingParams = new PagingParams
+{
+    PageNumber = 1,
+    PageSize = 5,
+    SortColumn = "Name",
+    SortOrder = "DESC"
+};
+
+var posts = await blogRepo.GetPopularArticlesAsync(3);
 
 foreach (var post in posts)
 {
@@ -45,19 +54,42 @@ foreach (var post in posts)
     Console.WriteLine("Author: {0}", post.Author);
     Console.WriteLine("Category: {0}", post.Category);
     Console.WriteLine("".PadRight(80, '-'));
-}*/
+}
 
-var context = new BlogDbContext();
+var seeder = new DataSeeder(context);
 
-IBlogRepository blogRepo = new BlogRepository(context);
+seeder.Initialize();
+
+
+
+var tagsList = await blogRepo.GetPagedTagsAsync(pagingParams);
+Console.WriteLine("{0,-5}{1,-50}{2,10}", "ID", "Name", "Count");
+
+foreach (var item in tagsList)
+{
+    Console.WriteLine("{ 0,-5}{ 1,-50}{ 2,10})",
+        item.Id, item.Name, item.PostCount);
+}
+
+
 
 var categories = await blogRepo.GetCategoriesAsync();
-
-Console.WriteLine("{0,-5}{1,-50}{2,10}",
-    "ID", "Name", "Count");
+Console.WriteLine("{0,-5}{1,-50}{2,10}", "ID", "Name", "Count");
 
 foreach (var item in categories)
 {
     Console.WriteLine("{ 0,-5}{ 1,-50}{ 2,10})",
         item.Id, item.Name, item.PostCount);
+}
+
+
+
+var authors = context.Authors.ToList();
+
+Console.WriteLine("{0,-4}{1,-30}{2,-30}{3,12}", "ID", "Full Name", "Email", "Joined Date");
+
+foreach (var author in authors)
+{
+    Console.WriteLine("{0,-4}{1,-30}{2,-30}{3,12:MM/dd/yyyy}",
+        author.Id, author.FullName, author.Email, author.JoinedDate);
 }

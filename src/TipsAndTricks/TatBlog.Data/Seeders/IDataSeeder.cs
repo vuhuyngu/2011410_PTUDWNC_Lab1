@@ -4,7 +4,12 @@ using TatBlog.Data.Contexts;
 
 namespace TatBlog.Data.Seeders;
 
-public class DataSeeder : IDataSeeder
+public interface IDataSeeder
+{
+    void Initialize();
+}
+
+/*public class DataSeeder : IDataSeeder
 {
     private readonly BlogDbContext _dbContext;
 
@@ -118,4 +123,4 @@ public class DataSeeder : IDataSeeder
         _dbContext.SaveChanges();
         return posts;
     }
-}
+}*/
