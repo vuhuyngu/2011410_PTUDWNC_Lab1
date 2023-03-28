@@ -77,12 +77,16 @@ public class AuthorRepository : IAuthorRepository
 		string name = null,
 		CancellationToken cancellationToken = default)
 	{
-		return await _context.Set<Author>()
-			.AsNoTracking()
-			.WhereIf(!string.IsNullOrWhiteSpace(name), 
-				x => x.FullName.Contains(name))
-			.Select(a => new AuthorItem()
-			{
+        var authorQuery = _context.Set<Author>()
+            .AsNoTracking();
+
+        if (!string.IsNullOrWhiteSpace(name))
+        {
+            authorQuery = authorQuery.Where(x => x.FullName.Contains(name));
+        }
+
+        return await authorQuery.Select(a => new AuthorItem()
+        {
 				Id = a.Id,
 				FullName = a.FullName,
 				Email = a.Email,
