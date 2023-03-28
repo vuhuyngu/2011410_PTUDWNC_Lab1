@@ -108,8 +108,8 @@ public interface IBlogRepository
         string slug, 
         CancellationToken cancellationToken = default);
 
-    Task<IList<Author>> GetAuthorsAsync(
-        CancellationToken cancellationToken = default);
+    /*Task<IList<Author>> GetAuthorsAsync(
+        CancellationToken cancellationToken = default);*/
 
     Task<Post> GetPostByIdAsync(
         int id, 
