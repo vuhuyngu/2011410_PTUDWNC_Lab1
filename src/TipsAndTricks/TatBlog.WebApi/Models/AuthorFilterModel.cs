@@ -1,6 +1,6 @@
-﻿namespace TatBlog.WebApi.Models
+﻿namespace TatBlog.WebApi.Models;
+
+public class AuthorFilterModel : PagingModel
 {
-    public class AuthorFilterModel
-    {
-    }
+    public string Name { get; set; }
 }
