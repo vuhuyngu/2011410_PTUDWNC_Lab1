@@ -20,10 +20,19 @@
                 pattern: "blog/post/{year:int}/{month:int}/{day:int}/{slug}",
                 defaults: new { controller = "Blog", action = "Post" });
 
+            endpoints.MapAreaControllerRoute(
+                name: "Admin",
+                areaName: "admin",
+                pattern: "Admin/{controller=Dashboard}/{action=Index}/{id?}");
+
             endpoints.MapControllerRoute(
                 name: "admin-area",
+                pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");
+
+            /*endpoints.MapControllerRoute(
+                name: "admin-area",
                 pattern: "admin/{controller=Dashboard}/{action=Index}/{id?}",
-                defaults: new { area = "Admin" });
+                defaults: new { area = "Admin" })*/
 
             endpoints.MapControllerRoute(
                 name: "default",

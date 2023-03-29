@@ -8,6 +8,8 @@ public class BlogDbContext : DbContext
 {
     public DbSet<Author> Authors { get; set; }
 
+    public DbSet<Subscriber> Subscribers { get; set; }
+
     public DbSet<Category> Categories { get; set; }
 
     public DbSet<Post> Posts { get; set; }
@@ -18,9 +20,11 @@ public class BlogDbContext : DbContext
         DbContextOptionsBuilder optionsBuilder)
     {
 <<<<<<< Updated upstream
-        optionsBuilder.UseSqlServer(@"Server=PHUCNV;Database=TatBlog;
+        optionsBuilder.UseSqlServer(@"Server=DESKTOP-GJ77F65;Database=TatBlog;
 =======
         public DbSet<Author> Authors { get; set; }
+
+        public DbSet<Subscriber> Subscribers { get; set; }
 
         public DbSet<Category> Categories { get; set; }
 
@@ -28,7 +32,7 @@ public class BlogDbContext : DbContext
 
         public DbSet<Tag> Tags { get; set; }*/
 
-        public BlogDbContext(DbContextOptions<BlogDbContext> options)
+    public BlogDbContext(DbContextOptions<BlogDbContext> options)
             : base(options)
         {
 

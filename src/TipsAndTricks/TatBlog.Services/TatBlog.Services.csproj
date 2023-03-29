@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <Folder Include="Extensions\" />
+    <Folder Include="Timing\" />
     <Folder Include="Rss\" />
   </ItemGroup>
 
