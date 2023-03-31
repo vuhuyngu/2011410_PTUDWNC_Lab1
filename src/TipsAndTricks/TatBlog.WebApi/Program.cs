@@ -22,6 +22,7 @@ var app = builder.Build();
     app.SetupRequestPipeLine();
     // Configure API endpoints
     app.MapAuthorEndpoints();
+    app.MapCategoryEndpoints();
 
     app.Run();
 }
