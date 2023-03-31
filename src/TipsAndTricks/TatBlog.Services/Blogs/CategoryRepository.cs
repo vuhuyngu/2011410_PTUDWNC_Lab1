@@ -46,7 +46,6 @@ public class CategoryRepository : ICategoryRepository
 
         return (IPagedList<AuthorItem>)await categoryQuery.Select(a => new CategoryItem()
         {
-            Id = a.Id,
             Name = a.Name,
             UrlSlug = a.UrlSlug,
             Description = a.Description,
