@@ -45,6 +45,11 @@ public static class CategoryEndpoints
             .Produces<ApiResponse<string>>()
             .Produces(401);
 
+        routeGroupBuilder.MapPut("/{id:int}", UpdateCategory)
+            .WithName("UpdateAnCategory")
+            .Produces<ApiResponse<string>>()
+            .Produces(401);
+
         return app;
     }
 
@@ -99,9 +104,40 @@ public static class CategoryEndpoints
         int id, ICategoryRepository categoryRepository)
     {
         return await categoryRepository.DeleteCategoryAsync(id)
-            ? Results.Ok(ApiResponse.Success("Author is deleted",
+            ? Results.Ok(ApiResponse.Success("Category is deleted",
             HttpStatusCode.NoContent))
-            : Results.Ok(ApiResponse.Fail(HttpStatusCode.NotFound, "Could not find author"));
+            : Results.Ok(ApiResponse.Fail(HttpStatusCode.NotFound, "Could not find category"));
+    }
+
+    private static async Task<IResult> UpdateCategory(
+        int id, CategoryEditModel model,
+        IValidator<CategoryEditModel> validator,
+        ICategoryRepository categoryRepository,
+        IMapper mapper)
+    {
+        var validationResult = await validator.ValidateAsync(model);
+
+        if (!validationResult.IsValid)
+        {
+            return Results.Ok(ApiResponse.Fail(
+                HttpStatusCode.BadRequest, validationResult));
+        }
+
+        if (await categoryRepository
+                .IsCategorySlugExistedAsync(id, model.UrlSlug))
+        {
+            return Results.Conflict(
+                $"Slug '{model.UrlSlug}' đã được sử dụng");
+        }
+
+        var category = mapper.Map<Category>(model);
+        category.Id = id;
+
+        return await categoryRepository.AddOrUpdateAsync(category)
+            ? Results.Ok(ApiResponse.Success("Category is updated",
+            HttpStatusCode.NoContent))
+            : Results.Ok(ApiResponse.Fail(HttpStatusCode.NotFound,
+            "Could not find category"));
     }
 
 }
