@@ -29,6 +29,8 @@ public static class WebApplicationExtensions
             .AddScoped<IBlogRepository, BlogRepository>();
         builder.Services
             .AddScoped<IAuthorRepository, AuthorRepository>();
+        builder.Services
+            .AddScoped<ICategoryRepository, CategoryRepository>();
 
         return builder;
     }
