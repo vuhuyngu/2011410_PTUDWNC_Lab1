@@ -72,6 +72,7 @@ namespace TatBlog.Services.Blogs
             return await _context.Set<Post>()
                 .Include(x => x.Author)
                 .Include(x => x.Category)
+                .Include(x => x.Tags)
                 .OrderByDescending(p => p.ViewCount)
                 .Take(numPosts)
                 .ToListAsync(cancellationToken);
@@ -730,6 +731,26 @@ namespace TatBlog.Services.Blogs
         }
 
         public Task GetPostAsync(PostQuery postQuery)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IList<MonthPostCount>> CountMonthPostsAsync(int numMonths, CancellationToken cancellationToken = default)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> DeletePostById(int id, CancellationToken cancellationToken = default)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Tag> GetTagByIdAsync(int id, CancellationToken cancellationToken = default)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> DeleteTagByIdAsync(int id, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }

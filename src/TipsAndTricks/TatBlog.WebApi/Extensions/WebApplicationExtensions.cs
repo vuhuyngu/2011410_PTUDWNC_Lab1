@@ -31,6 +31,8 @@ public static class WebApplicationExtensions
             .AddScoped<IAuthorRepository, AuthorRepository>();
         builder.Services
             .AddScoped<ICategoryRepository, CategoryRepository>();
+        builder.Services
+            .AddScoped<ISubscriberRepository, SubscriberRepository>();
 
         return builder;
     }

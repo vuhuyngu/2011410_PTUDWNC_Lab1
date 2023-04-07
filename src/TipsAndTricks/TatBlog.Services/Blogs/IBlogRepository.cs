@@ -111,9 +111,18 @@ public interface IBlogRepository
     /*Task<IList<Author>> GetAuthorsAsync(
         CancellationToken cancellationToken = default);*/
 
-    Task<Post> GetPostByIdAsync(
-        int id, 
-        CancellationToken cancellationToken = default);
-    Task CreateOrUpdatePostAsync(object post, List<string> list);
+        Task CreateOrUpdatePostAsync(object post, List<string> list);
     Task GetPostAsync(PostQuery postQuery);
+
+    Task<IList<MonthPostCount>> CountMonthPostsAsync(
+        int numMonths, CancellationToken cancellationToken = default);
+
+    Task<bool> DeletePostById(
+        int id, CancellationToken cancellationToken = default);
+
+    Task<Tag> GetTagByIdAsync(
+        int id, CancellationToken cancellationToken = default);
+
+    Task<bool> DeleteTagByIdAsync(
+        int id, CancellationToken cancellationToken = default);
 }
