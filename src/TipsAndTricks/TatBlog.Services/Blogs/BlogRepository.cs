@@ -733,5 +733,15 @@ namespace TatBlog.Services.Blogs
         {
             throw new NotImplementedException();
         }
+
+        public Task<IList<MonthPostCount>> CountMonthPostsAsync(int numMonths, CancellationToken cancellationToken = default)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> DeletePostById(int id, CancellationToken cancellationToken = default)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
