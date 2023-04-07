@@ -120,4 +120,9 @@ public interface IBlogRepository
     Task<bool> DeletePostById(
         int id, CancellationToken cancellationToken = default);
 
+    Task<Tag> GetTagByIdAsync(
+        int id, CancellationToken cancellationToken = default);
+
+    Task<bool> DeleteTagByIdAsync(
+        int id, CancellationToken cancellationToken = default);
 }
