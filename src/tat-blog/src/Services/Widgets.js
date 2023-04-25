@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { get_api } from './Methods';
 
 export async function getCategories (){
     try {
