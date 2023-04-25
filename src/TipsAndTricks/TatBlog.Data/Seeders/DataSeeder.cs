@@ -637,7 +637,7 @@ namespace TatBlog.Data.Seeders
                 Category = categories[2],
                 Tags = new List<Tag>()
                 { tags[2] }
-            },
+            }
         };
 
             _dbContext.AddRange(posts);
